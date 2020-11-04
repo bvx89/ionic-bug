@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>
+        <h1>Modal</h1>
+      </ion-label>
+    </ion-list-header>
+    <ion-button expand="full" color="danger" (click)="faultyModal()">
+      Faulty
+    </ion-button>
+    <ion-button expand="full" color="success" (click)="workingModal()">
+      Working
+    </ion-button>
+    <ion-list-header>
+      <ion-label>
+        <h1>Popover</h1>
+      </ion-label>
+    </ion-list-header>
+    <ion-button expand="full" color="danger" (click)="faultyPopover($event)">
+      Faulty
+    </ion-button>
+    <ion-button expand="full" color="success" (click)="workingPopover($event)">
+      Working
+    </ion-button>
+  </ion-list>
+</ion-content>
